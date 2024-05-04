@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.grid-style {
+  @apply grid-cols-1 sm:grid-cols-2 md:grid-cols-3;
+}
+
+.header-padding {
+  @apply px-10;
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+  .grid-style {
+    @apply grid-cols-2 md:grid-cols-3 px-24;
+  }
+
+  .header-padding {
+    @apply px-24;
+  }
+}
